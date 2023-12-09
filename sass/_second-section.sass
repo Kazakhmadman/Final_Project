@@ -1,0 +1,50 @@
+.second-section
+    min-height: 365px
+    background: linear-gradient(to top left,  #FDE68A 50%, #FEF3C7 50% )
+    
+  
+    .main_wrapper
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        .left
+            grid-column: 80px
+            grid-column: 1/span 4
+            &_img
+                position: relative
+                .cup_blue
+                    position: absolute
+                    left: 30px
+            .title
+                margin-top: 16px
+                margin-bottom: 16px
+                +title
+                .subtitle
+                    +subtitle   
+        .center
+            grid-column: 5/span 3
+            &_img
+                position: relative
+                .cheese_green
+                    position: absolute
+                    left: 25px           
+                    /* Сам не понял почему 25, отчего отталкивается  */
+            .title
+                margin-top: 16px
+                margin-bottom: 16px
+                +title
+                .subtitle
+                    /* margin-top: 16px Почему то не сработал!!! */
+                    +subtitle
+        .right
+            grid-column: 9/span 3
+            &_img
+                position: relative
+                .tv_pink
+                    position: absolute
+                    left: 43px
+            .title
+                margin-top: 16px
+                margin-bottom: 16px
+                +title
+                .subtitle
+                    +subtitle            

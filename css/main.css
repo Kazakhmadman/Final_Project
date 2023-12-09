@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-section {
+  height: 1044px;
+  background-color: #FEF3C7;
+}
+.main-section__nav-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+.main-section__header {
+  display: grid;
+  grid-column: 1/span 1;
+}
+.main-section__logo {
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  color: #78350F;
+}
+.main-section__nav {
+  display: grid;
+  grid-column: 5/span 6;
+  justify-content: right;
+}
+.main-section__btn {
+  display: grid;
+  grid-column: 11/span 2;
+}
+.main-section__content-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.buttons__main-btn {
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid var(--amber-900, #78350F);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #78350F;
+  color: #78350F;
+  background-color: #FEF3C7;
+}
+
+.nav-menu__list {
+  display: flex;
+}
+.nav-menu__item {
+  padding: 12px 8px;
+  margin-right: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #78350F;
+}
+
+.second-section {
+  min-height: 365px;
+  background: linear-gradient(to top left, #FDE68A 50%, #FEF3C7 50%);
+}
+.second-section .main_wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.second-section .main_wrapper .left {
+  grid-column: 80px;
+  grid-column: 1/span 4;
+}
+.second-section .main_wrapper .left_img {
+  position: relative;
+}
+.second-section .main_wrapper .left_img .cup_blue {
+  position: absolute;
+  left: 30px;
+}
+.second-section .main_wrapper .left .title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: var(--blue-gray-900, #0F172A);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+}
+.second-section .main_wrapper .left .title .subtitle {
+  color: var(--blue-gray-900, #0F172A);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+}
+.second-section .main_wrapper .center {
+  grid-column: 5/span 3;
+}
+.second-section .main_wrapper .center_img {
+  position: relative;
+}
+.second-section .main_wrapper .center_img .cheese_green {
+  position: absolute;
+  left: 25px;
+  /* Сам не понял почему 25, отчего отталкивается  */
+}
+.second-section .main_wrapper .center .title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: var(--blue-gray-900, #0F172A);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+}
+.second-section .main_wrapper .center .title .subtitle {
+  /* margin-top: 16px Почему то не сработал!!! */
+  color: var(--blue-gray-900, #0F172A);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+}
+.second-section .main_wrapper .right {
+  grid-column: 9/span 3;
+}
+.second-section .main_wrapper .right_img {
+  position: relative;
+}
+.second-section .main_wrapper .right_img .tv_pink {
+  position: absolute;
+  left: 43px;
+}
+.second-section .main_wrapper .right .title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: var(--blue-gray-900, #0F172A);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+}
+.second-section .main_wrapper .right .title .subtitle {
+  color: var(--blue-gray-900, #0F172A);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.fourth-section {
+  min-height: 816px;
+  background-color: #FEF3C7;
+  padding: 160px 80px;
+}
+.fourth-section .fourth_wrapper {
+  height: 496px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  padding: 80px;
+  border-radius: 30px;
+  background: var(--White, #FFF);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07), 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.fourth-section .fourth_wrapper_left {
+  grid-column: 1/span 5;
+}
+.fourth-section .fourth_wrapper_left .title {
+  color: var(--blue-gray-900, #0F172A);
+  font-family: Roboto;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%;
+  margin-top: 31px;
+}
+.fourth-section .fourth_wrapper_left .wrapper_block_top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+.fourth-section .fourth_wrapper_left .wrapper_block_top .text {
+  color: var(--blue-gray-900, #0F172A);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.fourth-section .fourth_wrapper_left .wrapper_block_center {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.fourth-section .fourth_wrapper_left .wrapper_block_center .text {
+  color: var(--blue-gray-900, #0F172A);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.fourth-section .fourth_wrapper_left .wrapper_block_bottom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.fourth-section .fourth_wrapper_left .wrapper_block_bottom .text {
+  color: var(--blue-gray-900, #0F172A);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.fourth-section .fourth_wrapper_left .button {
+  margin-top: 24px;
+}
+.fourth-section .fourth_wrapper_left .button_btn {
+  padding: 16px 32px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #78350F;
+  font-size: 20px;
+  color: #78350F;
+  background-color: #FEF3C7;
+  border-radius: 8px;
+  border: 2px solid var(--amber-900, #78350F);
+  cursor: pointer;
+}
+.fourth-section .fourth_wrapper_right {
+  position: relative;
+  grid-column: 6/span 5;
+}
+.fourth-section .fourth_wrapper_right .wrapper_img {
+  position: absolute;
+  top: -145px;
+  right: -120px;
+}/*# sourceMappingURL=main.css.map */

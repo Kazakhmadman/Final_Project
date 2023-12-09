@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before,
+html
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    list-style: none
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap')
+
+$color-brown: #78350F
+=text-regular
+    font-family: Roboto
+    font-size: 16px
+    font-style: normal
+    font-weight: 500
+    line-height: 24px
+    letter-spacing: 0.5px
+    color: $color-brown
+
+=title
+    color: var(--blue-gray-900, #0F172A)
+    font-family: Roboto
+    font-size: 20px
+    font-weight: 500
+
+=subtitle
+    color: var(--blue-gray-900, #0F172A)
+    font-family: Roboto
+    font-size: 18px
+    font-weight: 400
+
+=label
+    color: var(--blue-gray-900, #0F172A)
+    font-family: Roboto
+    font-size: 56px
+    font-style: normal
+    font-weight: 800
+    line-height: 110%
+
+.container
+    max-width: 1440px
+    margin: 0 auto
+
+@import './_main-section'
+@import './_second-section'
+@import './_third-section'
+@import './_fourth-section'
